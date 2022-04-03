@@ -1,0 +1,188 @@
+/*
+  Navbar stuff
+  you can disregard
+*/
+
+.navbar-light {
+  background-color: goldenrod;
+}
+
+.navbar-xs { 
+  min-height:28px; height: 40px; 
+}
+
+.navbar-xs .navbar-brand{ 
+  padding: 12px 12px;
+  font-size: 16px;
+  line-height: 28px; 
+}
+
+.navbar-xs .navbar-nav > li > a {  
+  padding-top: 12px; 
+  padding-bottom: 12px; 
+  line-height: 28px; 
+}
+
+.nav-link { font-size: 22px;
+margin: 20px, 0px;}
+
+.nav-item :hover {background-color: black;}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: black; 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color:black;}
+
+.dropdownbtn {color: gold;}
+/*
+===
+  NOTE: when I say "home" I am really 
+  refering to index.html
+===
+*/
+
+/*
+  Home header image
+*/
+#home-header-image {
+  background-image: url('../images/ClinicInside.jpeg');  /*Change home page image here*/
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  margin-bottom: 0px !important; 
+  border-radius: 0 !important;
+}
+
+/*
+  Home header greyed out 
+  background behind text
+*/
+#home-header-text {
+  background:linear-gradient(to top,rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+  padding: 15px 15px 15px 15px;
+  text-align:center;
+  font-weight:bold;
+}
+
+/*
+  Home header text 
+  spacing config
+*/
+
+#home-header-text-container {
+  padding-top:12em;
+  padding-bottom:12em
+}
+
+/*
+  Format a div containing
+  jumbotrons
+*/
+#container-all-jumbotrons {
+  background-color: white;
+  margin-bottom: 0px !important; 
+  border-radius: 0 !important;
+}
+/* 
+  Not in use currently
+
+  #home-header-lead-text {
+    color:white;
+    padding-left:10em;
+    padding-right:10em;
+  } 
+*/
+
+
+/*
+  Social Media Stuff
+  https://bootsnipp.com/snippets/or33d
+*/
+
+span{
+  font-size:15px;
+}
+
+.box{
+  padding:60px 0px;
+}
+
+.box-part{
+  background:#FFF;
+  border-radius:0;
+  padding:60px 10px;
+  margin:30px 0px;
+}
+.text{
+  margin:20px 0px;
+}
+
+.fa{
+   color:#4183D7;
+}
+.Introtitle {font-size: 28px;
+color:white; 
+font-family:Verdana, Geneva, Tahoma, sans-serif}
+.Introduction {color: White;
+  font-size: 16px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+ }
+.MeetTeam {color: white;}
+
+.display-4 { font-weight: bold;
+  border: solid, 5px; 
+  text-align:center;
+  color:white;
+  font-weight: bold;}
+
+  #fname { color: white;
+  font-size: 14px;}
+
+ #phonenumber {color: white;}
+
+ .profilepictures { float:left;
+display:inline;
+margin-right: 15px;
+border: solid;
+border-width: 5px;
+border-color: goldenrod;
+border-radius: 25px;}
