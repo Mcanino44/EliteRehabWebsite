@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Your Physical Therapy Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <!-- Import our custom styles-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+
+    <!-- Link bootstrap--don't worry about this-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<!--
+This is pretty much barebones--I left in a bunch of stuff for obvious reasons (like the navigation bar and basic
+jumbotron stuff and footer information)
+
+Give it a shot and explore with bootstrap!!
+
+If bootstrap is being annoying, raw html css is perfectly fine to use as well!!! Please refer to 
+the examples I've made for you and the documentation links I've provided!
+-->
+
+<body>
+    <!-- Navigation bar found at the top of the every page...note please make sure your "href" link is accurate
+     if you ever attempt to modify this section, otherwise your page may never load because the browser
+     won't know where to look! -->
+    <nav class="navbar navbar-xs navbar-expand-lg fixed-top navbar-light">
+        <!-- class="......" is bootstrap stuff to make our life easy, 
+        look at the bootstrap documentation link I've provided you
+        -->
+        <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <!-- <ul> creates an un ordered list of "stuff" being the text with links to other pages-->
+                    <li class="nav-item">
+                        <!--<li> creates a list item for our unordered list-->
+                        <!-- Use inline style stuff for things that are simple...its cool to put them
+                                 in the styles.css but to just show you that its possible I'll do it here-->
+                        <a class="nav-link" href="../index.html" style="color:white;">Home</a>
+                        <!-- here is the actual content in the list-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html" style="color:white;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Services.html" style="color:white;">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Locations.html" style="color:white;">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Frequently-Asked-Questions.html" style="color:white;">New
+                            Patient Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Testimonials.html" style="color:white;">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html" style="color:white;">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Divs allow us to wrap large or small chunks of code and style them all at once, in this case I am wraping 
+         all the elements in the div and applying styles to them all at once. I am doing this because it makes formatting
+         smoother, more controlled, and also easier to group elements-->
+    <div id="container-all-jumbotrons">
+        <div class="row">
+            <div class="col-sm">
+                <!--Use col to evenly space out any elements in this row -->
+                <div class="jumbotron" style="background-color:#26282b;">
+                    <h1 class="display-4" style="text-align:center;color:white;font-weight: bold;">New Patient Information</h1>
+                    <p style="color:white;"> </p>
+                    <form>
+                        <label for="fname" id="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname" id="fname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br>
+                        <label for="phonenumber" id="phonenumber">Phone Number:</label><br>
+                        <input type="text" id="phonenumber" name="phonenumber"><br>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="jumbotron"  id="FAQ"style="background-color:#26282b; color:white">
+                    <h1 class="display-4" style="text-align:center;color:white;font-weight: bold;">FAQ</h1>
+                    <h2>How clean is your clinic?</h2>
+                    <p>Elite hashas always kept immaculate standards and nightly cleaning of its clinics. 
+                       In early March 2020 when the Coronavirus pandemic began, SPEAR added an additional
+                       sterilization process in its clinics, using an EPA-registered disinfectant that 
+                       qualifies under the EPA’s emerging viral pathogen program for use against SARS-CoV-2,
+                       a coronavirus that causes COVID-19. We also implemented patient and therapist screening,
+                       as well as many more tactics you can read about here, which ensure we are well beyond 
+                       the CDC’s recommended sanitization levels for a service that the Federal and State
+                       governments have identified as an essential service.</p>
+                    <h2>What do I need to waer for my initial appointment?</h2>
+                    <p>Wear comfortable, loose-fitting clothing and a pari of rubber-soled sneakers.
+                        Every treatment course begins with a comprehensive evaluation.</p>
+                    <h2>Should I bring X-rays and MRI reports with me?</h2>
+                    <p>Yes, please do. Although we can request these from your doctor or lab facility
+                        it is better if you provide them for us during your first visit so that we can 
+                        perform a more complete and accurate evaluation.You will be asked to fill out some basic paperwork, 
+                        so don’t forget to bring your prescription for physical therapy.</p>
+                    <h2>What types of treatments do you perform?</h2>
+                    <P>We perform various types of treatments, and will customize a program 
+                        combining the best techniques specific for your particular injury. 
+                        The modalities and techniques we use include soft tissue massage, 
+                        joint mobilization, electrical stimulation, stretching, therapeutic 
+                        exercises, and ice. The treatment program will be performed in a
+                         private treatment room as well as a gym setting using a variety 
+                         of athletic and rehabilitation equipment.</P>
+                    <h2>What type of equipment do you have on the premises?</h2>
+                    <p>Because we focus on rehabilitation as well as performance enhancement,
+                         we have a full gym on the premises, including a variety of equipment
+                          intended solely for rehabilitation.</p>
+                    <h2>Do I always see the same therapist?</h2>
+                    <p>At the SPEAR Center, you will always see the same physical therapist
+                         that you start with, except for special circumstances such as 
+                         scheduling difficulties or special diagnoses.</p>
+                    <h2>How often will I come?</h2>
+                    <p>Most treatment schedules are for 2-3 visits
+                       per week, but this will vary based on your condition and physical
+                       ability. Physical therapy sessions typically last an hour. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright stuff and helpful easy access links-->
+    <footer class="page-footer font-small white pt-4" style="background-color:#26282b; color:white">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <!-- format the columns-->
+                    <h5 class="text-uppercase">Your Physical Therapy Practice</h5>
+                    <p>Thank you for visiting!</p>
+                </div>
+                <div class="col">
+                    <h5>INSURANCE</h5>
+                    <ul class="list-unstyled">
+                        <!--Just have each item float under each other with no bullet points-->
+                        <li>
+                            <a href="#!">Insurance 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Insurance 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Insurance 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Insurance 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>LOCATIONS</h5>
+                    <ul class="list-unstyled">
+                        <!--Just have each item float under each other with no bullet points-->
+                        <li>
+                            <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+carmel">Carmel</a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+wappingers">Wappingers
+                                Falls</a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+hyde+park">Hyde
+                                Park</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3" style="color:white;">© 2020 Copyright:
+            <a style="color:white;" href="https://marist.edu/"> Marist.edu</a>
+        </div>
+    </footer>
+
+    <!-- Link bootstrap--don't worry about this stuff below...-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
